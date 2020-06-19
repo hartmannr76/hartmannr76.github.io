@@ -26,9 +26,8 @@
       <pubDate>Fri, 23 Aug 2019 08:22:45 -0400</pubDate>
       
       <guid>https://www.rhart.dev/projects/dotnet-core-cra/</guid>
-      <description>So I was reading this post a while ago on wiring up a server-side-rendering pipeline into the Create React Application and decided to try this myself, but in a language/framework that I like for server side programming (no offense JavaScript).
-I ended up getting something that worked pretty well and will probably explain it more in detail at some point in time.
-GitHub link</description>
+      <description>Create-React-App (CRA) has provided a very comfortable environment for most people to get started with running a React application. It handles a bunch of configurations for you out of the box (think Webpack, test setup, babel, etc.) There are many dev&amp;rsquo;s in my organization who reference this as the starting place.
+My team works heavily with all of the Patient pages (Home, Profile, Search, etc.) so a large portion of my work deals with rendering React on the server for SEO purposes, so wanting to figure out how CRA could play a role in this caught my interest.</description>
     </item>
     
     <item>
