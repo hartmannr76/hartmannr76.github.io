@@ -1,0 +1,339 @@
+/* General Styles */
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --light-blue: #a0c3ea;
+  --dark-blue: #194699;
+  --grey: #e1e1e1;
+  --gutter-column: 16px;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: 'wdth' 100;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0;
+  background-color: var(--white);
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header & Navigation */
+#main-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--white);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  transition: top 0.3s;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--dark-blue);
+  text-decoration: none;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin-left: 2rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--dark-blue);
+  font-weight: 500;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--light-blue);
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+/* Hero Section */
+.hero {
+  /* background-image: url('https://placehold.co/1920x1080'); Placeholder */
+  background-image: url('https://images.squarespace-cdn.com/content/v1/568441040e4c1155e1f1c3d8/1474904064068-ME4V58NIR7M81EDQ5RS3/sophiebelle.jpg?format=1500w'); /* Placeholder */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--white);
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+/* Buttons */
+.btn {
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.two-column {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-left: calc(var(--gutter-column) / -2);
+  margin-right: calc(var(--gutter-column) / -2);
+  max-width: calc(100% + var(--gutter-column));
+}
+
+.two-column ~ .two-column {
+  margin-top: 40px;
+}
+
+.two-column p {
+  padding: 0 20px;
+}
+
+.two-column .column {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 50%;
+  max-width: 50%;
+  box-sizing: border-box;
+}
+
+.btn-primary {
+  background-color: var(--dark-blue);
+  color: var(--white);
+}
+
+.btn-primary:hover {
+  background-color: var(--light-blue);
+  color: var(--dark-blue);
+}
+
+.btn-secondary {
+  background-color: var(--dark-blue);
+  color: var(--white);
+}
+
+.btn-secondary:hover {
+  background-color: var(--light-blue);
+  color: var(--dark-blue);
+}
+
+.container .btn-primary {
+  background-color: var(--white);
+  color: var(--dark-blue);
+}
+
+.container .btn-primary:hover {
+  background-color: var(--dark-blue);
+  color: var(--white);
+}
+
+/* Sections */
+section {
+  padding: 2rem 0;
+}
+
+.about-us {
+  background-color: var(--light-blue);
+  color: var(--black);
+}
+
+.about-us img {
+  border-radius: 20px;
+}
+
+.adoption-gallery {
+  background-color: var(--grey);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+  color: var(--dark-blue);
+}
+
+/* Adoption Gallery */
+.pet-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.pet-card {
+  background-color: var(--white);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.pet-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* CTA Section */
+.cta {
+  text-align: center;
+  background-color: var(--light-blue);
+  color: var(--black);
+}
+
+/* Footer */
+footer {
+  background-color: var(--dark-blue);
+  color: var(--white);
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.hamburger-menu {
+  display: none; /* Hidden by default on larger screens */
+  cursor: pointer;
+}
+
+.hamburger-menu .line {
+  width: 30px;
+  height: 3px;
+  background-color: var(--dark-blue);
+  margin: 6px 0;
+  transition: 0.4s;
+}
+/* END: Added Hamburger Menu styles */
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  h2 {
+    font-size: clamp(1.6rem, 5vw, 2.2rem);
+    line-height: 2.2rem;
+    margin-bottom: 2rem;
+  }
+
+  section {
+    padding: 1.5rem 0;
+  }
+
+  .hero {
+    height: 100vw;
+    margin-top: 100px;
+  }
+
+  .nav-container {
+    position: fixed;
+    top: 0;
+    right: -100%; /* Start off-screen */
+    /* max-width: 30%; */
+    /* padding: 0 40px; */
+    width: 60%;
+    height: 100vh;
+    background-color: var(--white);
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: right 0.5s ease-in-out;
+    z-index: 100;
+  }
+
+  /* START: Added slide-in active state */
+  .nav-container.nav-active {
+    right: 0;
+  }
+  /* END: Added slide-in active state */
+
+  .nav-links {
+    flex-direction: column;
+  }
+
+  .nav-links li {
+    margin: 1rem 0;
+  }
+
+  .nav-links li a {
+    min-height: 48px;
+    display: block;
+    padding-bottom: 0;
+    align-content: center;
+  }
+
+  .hamburger-menu {
+    display: block; /* Show the hamburger on small screens */
+    z-index: 101; /* Ensure it's above the nav container */
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+    line-height: 2.2rem;
+  }
+
+  .two-column ~ .two-column {
+    margin: initial;
+  }
+
+  .two-column {
+    /* flex-flow: column; */
+    columns: 1;
+  }
+
+  .two-column.small-flip {
+    flex-flow: wrap-reverse;
+    /* flex-flow: row-reverse; */
+  }
+
+  .two-column .column {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .two-column p {
+    padding: 0;
+  }
+}
