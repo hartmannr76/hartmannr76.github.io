@@ -11,11 +11,17 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <header id="main-header">
       <nav class="main-nav">
-        <!-- <a href="#" class="logo">Ollie's Angels</a> -->
         <a href="#" class="logo"
           ><img
             src="https://images.squarespace-cdn.com/content/v1/568441040e4c1155e1f1c3d8/1454370081129-JPR12KP7YBVDN6FJMTB6/Logo+Stacked.jpg?format=100w"
@@ -93,33 +99,62 @@
       <section class="adoption-gallery">
         <div class="container">
           <h2>Ready for a Forever Home</h2>
-          <div class="pet-gallery">
-            <div class="pet-card">
-              <img
-                src="https://placehold.co/400x300"
-                alt="A friendly dog named Buddy"
-              />
-              <h3>Buddy</h3>
-              <p>A friendly and playful friend waiting for a home.</p>
-              <a href="#" class="btn btn-secondary">Learn More</a>
+          <div class="carousel">
+            <div class="carousel-track">
+              <div class="pet-card">
+                <img
+                  src="https://s3.us-east-1.amazonaws.com/petstablished-app-beta/uploads/image/image/4623943/AxelLB2.jpg"
+                  alt="A friendly dog named Buddy"
+                />
+                <h3>Axel</h3>
+                <p>Male Bulldog Pit Bull Terrier Young</p>
+                <a href="#" class="btn btn-secondary">Learn More</a>
+              </div>
+              <div class="pet-card">
+                <img
+                  src="https://s3.us-east-1.amazonaws.com/petstablished-app-beta/uploads/image/image/5231557/BowenMEIMG_5300.jpeg"
+                  alt="A sweet cat named Lucy"
+                />
+                <h3>Bowen</h3>
+                <p>Male Labrador Retriever Hounds (All Types) Puppy</p>
+                <a href="#" class="btn btn-secondary">Learn More</a>
+              </div>
+              <div class="pet-card">
+                <img
+                  src="https://s3.us-east-1.amazonaws.com/petstablished-app-beta/uploads/image/image/5220969/CaponeFullSizeRender_3.jpg"
+                  alt="An energetic dog named Max"
+                />
+                <h3>Capone</h3>
+                <p>Male Miniature Pinscher Adult</p>
+                <a href="#" class="btn btn-secondary">Learn More</a>
+              </div>
+              <div class="pet-card">
+                <img
+                  src="https://s3.us-east-1.amazonaws.com/petstablished-app-beta/uploads/image/image/5231389/CarolinaMEIMG_5396.jpg"
+                  alt="An energetic dog named Max"
+                />
+                <h3>Carolina</h3>
+                <p>Female Labrador Retriever Hounds (All Types) Puppy</p>
+                <a href="#" class="btn btn-secondary">Learn More</a>
+              </div>
+              <div class="pet-card">
+                <img
+                  src="https://s3.us-east-1.amazonaws.com/petstablished-app-beta/uploads/image/image/4116555/ElliottIMG_0686.jpg"
+                  alt="An energetic dog named Max"
+                />
+                <h3>Elliott</h3>
+                <p>Male Hounds (All Types) Pit Bull Terrier Puppy</p>
+                <a href="#" class="btn btn-secondary">Learn More</a>
+              </div>
+              <!-- More cards if needed -->
             </div>
-            <div class="pet-card">
-              <img
-                src="https://placehold.co/400x300"
-                alt="A sweet cat named Lucy"
-              />
-              <h3>Lucy</h3>
-              <p>A sweet and gentle companion looking for love.</p>
-              <a href="#" class="btn btn-secondary">Learn More</a>
-            </div>
-            <div class="pet-card">
-              <img
-                src="https://placehold.co/400x300"
-                alt="An energetic dog named Max"
-              />
-              <h3>Max</h3>
-              <p>An energetic and adventurous pal seeking a family.</p>
-              <a href="#" class="btn btn-secondary">Learn More</a>
+            <div class="carousel-controls">
+              <button class="carousel-button" id="prevBtn">
+                <i class="fa-solid fa-arrow-left"></i>
+              </button>
+              <button class="carousel-button" id="nextBtn">
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
             </div>
           </div>
         </div>
