@@ -92,11 +92,10 @@ body {
 
 /* Hero Section */
 .hero {
-  /* background-image: url('https://placehold.co/1920x1080'); Placeholder */
-  background-image: url('https://images.squarespace-cdn.com/content/v1/568441040e4c1155e1f1c3d8/1474904064068-ME4V58NIR7M81EDQ5RS3/sophiebelle.jpg?format=1500w'); /* Placeholder */
+  background-image: url('https://images.squarespace-cdn.com/content/v1/568441040e4c1155e1f1c3d8/1502394881319-QNQ913SYAW6ACOR6LF11/IMG_6495.JPG?format=1500w'); /* Placeholder */
   background-size: cover;
-  background-position: center;
-  height: 100vh;
+  background-position: top;
+  height: 85vh;
   display: flex;
   align-items: center;
   justify-content: center;
