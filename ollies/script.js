@@ -6,14 +6,37 @@ hamburger.addEventListener('click', () => {
   hamburger.classList.toggle('open');
 });
 
-const track = document.querySelector('.carousel-track');
-const nextBtn = document.getElementById('nextBtn');
-const prevBtn = document.getElementById('prevBtn');
 
-nextBtn.addEventListener('click', () => {
-  track.scrollBy({ left: 320, behavior: 'smooth' });
+$(document).ready(function(){
+
+$('.adoption-gallery .carousel').slick({
+  dots: true,
+  centerMode: true,
+  centerPadding: '60px',
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2000,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 3
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 1
+      }
+    }
+  ]
 });
 
-prevBtn.addEventListener('click', () => {
-  track.scrollBy({ left: -320, behavior: 'smooth' });
 });
