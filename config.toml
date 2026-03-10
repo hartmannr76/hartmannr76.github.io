@@ -1,0 +1,45 @@
+baseURL = "https://www.rhart.dev/"
+languageCode = "en-us"
+theme = "hyde"
+
+## Site Settings
+[params]
+    author = "Ricky Hartmann"
+    title = "Title"
+    description = "Random thoughts of a NYC dev"
+    dateformat = "Jan 2, 2006"
+
+    # sidebar, copyright & license
+    copyright = "htr3n"
+    license = "CC BY-SA 4.0"
+    licenseURL = "https://creativecommons.org/licenses/by-sa/4.0"
+    showBuiltWith = true
+
+    # https://highlightjs.org
+    highlightjs = true
+    highlightjsstyle = "github"
+    mainSections = ["posts"]
+
+## Social links
+[params.social]
+    twitter = "ricky_hartmann"
+    github = "hartmannr76"
+    linkedin = "ricky-hartmann-14690531"
+    gravatar = "hartmannr76@gmail.com"
+
+## Main Menu
+[[menu.main]] 
+    name = "Posts"
+    weight = 100
+    identifier = "posts"
+    url = "/posts/"
+[[menu.main]]
+    name = "Projects"
+    identifier = "projects"
+    weight = 200
+    url = "/projects/"
+[[menu.main]]
+    name = "About"
+    identifier = "about"
+    weight = 300
+    url = "/about/"
